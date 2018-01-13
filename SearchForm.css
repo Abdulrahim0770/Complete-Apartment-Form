@@ -1,0 +1,19 @@
+body {background-color: yellow;}
+
+#fieldset1 {background-color: lightpink; border-color: darkblue;}
+
+#fieldset2 {background-color: lightgreen; border-color: darkgreen;}
+
+#legend1 { color: darkblue; }
+
+#legend2 { color: darkgreen; }
+
+#fieldset1.question {color: black;}
+
+#fieldset2.question {color: black;}
+
+.question {font-weight: bold}
+
+label {font-weight: normal}
+
+#expertsuggestionsfield{background-color: aquamarine; color: azure}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+
+<title> Abdul's Apartment Search Form  </title>
+    
+</head>
+    
+<body>
+    
+<form action="SearchFormResults.php" method="post">
+    
+    <fieldset id="fieldset1">
+    
+    <legend id="legend1"> Renter(s) Information</legend>
+        
+    <p class="question">
+    How many people will live in the apartment ?
+    <input type = "number" name="people" min="1" max="5"/>
+   
+    </p>
+        
+    
+    <p class="question"> 
+    Smoker?
+    
+    <label><input type="radio" name="Smoker" value="1" />Yes</label>
+    
+    <label><input type="radio" name="Smoker" value="0" />No</label>
+    
+    </p>
+    
+    
+    <p class="question">  Any pets?
+    <br>
+
+    <label><input type="checkbox" name="Pets" value="1" />Cat(s</label><br/>
+        
+    <label><input type="checkbox" name="Pets" value="1" 
+    />Dog(s)</label><br/>
+        
+    <label><input type="checkbox" name="Pets" value="1" 
+    />Specify:</label>
+
+    <input type="text" name="other" value=""/><br />
+    <label><input type="checkbox" name="Pets" value="0" />No Pets</label>
+
+    </p>
+    
+    </fieldset>
+    
+    
+    
+    <fieldset id="fieldset2">
+    
+    <legend id="legend2"> What are you looking for?</legend>
+        
+    <ul>
+        
+        <li>
+            
+            <p class="question">
+            Size of apartment: <br>
+                
+            <input type="checkbox" name="Studio" id ="Studio" value="1" />
+            <label for="Studio">Studio</label>
+								
+            <input type="checkbox" name="ThreeHalf" id ="ThreeHalf"  value="1"/>
+            <label for="ThreeHalf">3&frac12; </label>
+								
+            <input type="checkbox" name="FourHalf" id ="FourHalf"  value="1"/>
+            <label for="FourHalf">4&frac12;</label>
+								
+            <input type="checkbox" name="FiveHalf" id="FiveHalf"  value="1" />
+            <label for="FiveHalf">5&frac12;</label>
+								
+            <input type="checkbox" name="MoreFiveHalf" id ="MoreFiveHalf"  value="1" />
+            <label for="MoreFiveHalf">More than 5&frac12;</label>
+    
+            </p>
+        
+        </li>
+        
+        <li>
+            <p class="question">
+				Do you have preferred locations?<br>
+				<label><input type="checkbox" name="wi"
+                              value="1" id="WestIsland"/>West Island</label>
+                <label><input type="checkbox" name="dt"
+                              value="1" id="Downtown" />Downtown</label>
+                <label><input type="checkbox" name="lw"
+                              value="1" id="LowerWestmount"/>Lower Westmount</label>
+                <label><input type="checkbox" name="ndg"
+                              value="1" id="NDG"/>NDG</label>
+                <label><input type="checkbox" name="eei"
+                              value="1" id="EastIsland"/>East End of Island</label>
+				</p>
+        </li>
+        
+        <li>
+            
+            <p class="question">
+                Price Range/month: <br>
+                
+                <select name="priceRange">
+				    
+                    <option id = "UnderFive" name="Price" value="499"> &lt;$500 </option>
+				    <option id = "Five-Seven" name="Price" value="700"> $500-$700 </option>
+				    <option id = "Seven-Thousand" name="Price" value="1000">  $700-$1000 </option>
+				    <option id = "1001"> &gt;$1000</option>
+				
+                </select>
+    
+            </p>
+            
+        </li>
+        
+        
+        <li>
+        
+            <p class="question">
+            Would be nice to have: <br>
+                
+            <label><input type="checkbox" name="Fireplace"
+                              value="1" />Fireplace</label>
+                <label><input type="checkbox" name="Laundry"
+                              value="1" />Laundromat in building</label>
+                <label><input type="checkbox" name="IndoorParking"
+                              value="1" />Indoor Parking</label>
+                <label><input type="checkbox" name="OutdoorParking"
+                              value="1" />Outdoor Parking</label>
+                <label><input type="checkbox" name="Balcony"
+                              value="1" />Balcony</label>
+            </p>
+            
+        </li> 
+        
+    </ul>
+    
+    </fieldset>
+    
+    
+<p id="expertsuggestions">
+    
+    
+    Let's see what we can find... <br>
+    
+    <input type="submit" value="Search" />
+    <input type="reset"  value="Start over" />
+    
+</form>
+    
+
+
+</body>
+
+</html>
